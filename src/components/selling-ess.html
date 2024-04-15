@@ -1,0 +1,981 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	document.title = "HCLSoftware U – selling-essentials-program";
+</script>
+<script type="text/javascript">
+	var link = document.createElement('meta');
+	link.setAttribute('name', 'description');
+	link.content = 'Fast, Accurate, Agile Application Security Testing. Discover useful insights into the technologies and procedures being used today and the challenges companies face in developing robust application security solutions. Explore and learn the market-leading Application Security Solutions (SAST, DAST, IAST, SCA, API) using HCL AppScan';
+	document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+<style type="text/css">
+	ul.column-one,
+	ul.second-grid,
+	ul.third-grid {
+		padding-left: 15px;
+	}
+	
+	.has-course-card:hover .LJBtn {
+		padding-left: 10px;
+		transition: all .4s ease;
+		color: #FFF;
+	}
+	
+	.Register-text {
+		font-size: 30px !important;
+		line-height: 1;
+	}
+	
+	.LearnJourCard a.course-content-link:hover {
+		color: #FFF !important;
+	}
+	
+	div.LogoTxt {
+		margin-bottom: 10px;
+	}
+	
+	.fa-solid.fa-arrow-right {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.img-responsive {
+		display: inline-table;
+		max-width: 100%;
+	}
+	
+	.dropdown.btn-group.pull-right {
+		display: none;
+	}
+	
+	body {
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.Text-center {
+		text-align: center;
+	}
+	
+	.Text-Right {
+		text-align: right;
+	}
+	
+	.SubSec {
+		font-size: 26px;
+		margin: 15px auto;
+	}
+	
+	.centered {
+		position: absolute;
+		top: 20%;
+		left: 3%;
+		color: #fff;
+		width: 50%;
+	}
+	
+	.LogoTxt {
+		color: #fff;
+		font-size: 45px;
+	}
+	
+	.LJBtn a.no-course:hover {
+		padding-left: 0px !important;
+		cursor: default;
+	}
+	
+	.liteGreenBox {
+		width: 435px;
+	}
+	
+	.LearnJourCard {
+		color: #000;
+		background: #fff;
+		padding: 20px;
+		margin: 15px auto;
+		border-radius: 4px;
+		fill: #FFF;
+		filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.15)) drop-shadow(-0.9519213438034058px 8.567292213439941px 18.086505889892578px rgba(0, 0, 0, 0.15)) drop-shadow(-8.567292213439941px 130.41322326660156px 52.355674743652344px rgba(0, 0, 0, 0.02)) drop-shadow(-13.326898574829102px 203.71116638183594px 57.11528015136719px rgba(0, 0, 0, 0.00));
+	}
+	
+	.LearnJourCard:hover {
+		color: #fff;
+		background: #000032;
+	}
+	
+	.LearnJourCard:hover a {
+		color: #fff !important;
+		/*scale: 1.1;*/
+	}
+	
+	.GreenCardTitle {
+		font-size: 20px;
+		font-weight: bold;
+		min-height: 67px;
+		line-height: 22px;
+		margin: 10px auto;
+	}
+	
+	.GreenCardPara {
+		font-size: 14px;
+		min-height: 100px;
+		line-height: 20px;
+		margin: 10px auto;
+	}
+	
+	.LJBtn a {
+		background: none !important;
+		color: #17707F !important;
+		font-weight: 500 !important;
+		padding-left: 0 !important;
+		font-size: 14px !important;
+	}
+	
+	.darkCardSec {
+		padding: 30px 20px;
+	}
+	
+	.darkCard {
+		border-radius: 4px;
+		background: #DCE6F0;
+		color: #000;
+		padding: 20px 10px;
+		/*margin: 10px 25px;*/
+		margin: 15px;
+	}
+	
+	.darkCardTitle {
+		font-size: 18px;
+	}
+	
+	.darkCardText {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+	
+	.darkCardPara {
+		margin-left: 15px;
+		min-height: 100px;
+	}
+	
+	.ResoucesLinks a {
+		color: #000032 !important;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 500;
+	}
+	
+	.ResoucesLinks li {
+		color: #000032;
+	}
+	
+	.LearnJouCardSec {
+		padding: 25px;
+		background: #EFF0F7;
+	}
+	
+	div.resources {
+		margin: auto 33px 45px 33px;
+	}
+	
+	glyphicon.glyphicon-arrow-right {
+		font-size: 12px;
+		width: 20px;
+	}
+	
+	@media screen and (max-width: 429px) {
+		.ProdPage {
+			margin-top: 95px !important;
+		}
+		.Register-text {
+			font-size: 14px !important;
+		}
+		.Signupcard a {
+			font-size: 12px;
+		}
+	}
+	
+	@media screen and (max-width: 767px) {
+		.Register-text {
+			margin-bottom: 10px;
+		}
+	}
+	
+	@media only screen and (min-width: 420px)and (max-width: 767px) {
+		ul.third-grid,
+		ul.second-grid {
+			margin-top: -10px !important;
+		}
+		.Register-text {
+			font-size: 14px !important;
+		}
+		.Signupcard a {
+			font-size: 12px;
+		}
+	}
+	
+	@media only screen and (min-width: 776px)and (max-width: 780px) {
+		.darkCard {
+			margin: 10px;
+		}
+		.Register-text {
+			font-size: 16px !important;
+		}
+	}
+	
+	@media only screen and (min-width: 768px)and (max-width: 798px) {
+		.centered {
+			transform: translate(3%, -5%);
+		}
+		ul.third-grid {
+			margin-top: -10px;
+		}
+		.Register-text {
+			font-size: 14px !important;
+		}
+	}
+	
+	@media only screen and (min-width: 768px)and (max-width: 1074px) {
+		.SubSec {
+			font-size: 25px;
+			margin: 10px auto;
+			line-height: 25px;
+		}
+		.BannerPar {
+			font-size: 13px !important;
+			line-height: 15px;
+		}
+		.centered {
+			position: absolute;
+			top: 15%;
+			left: 2%;
+			color: #fff;
+			width: 65%;
+			transform: translate(3%, 1%);
+		}
+		.BannerImg {
+			min-height: 275px;
+			width: 100%;
+		}
+		.LogoTxt {
+			margin-bottom: 20px;
+		}
+		ul.third-grid {
+			margin-top: -10px;
+		}
+	}
+	
+	@media only screen and (min-width: 768px)and (max-width: 1199px) {
+		.resources-text {
+			font-size: 16px !important;
+			font-style: normal;
+			font-weight: 500;
+		}
+		.resources-para {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400;
+		}
+		a.darkCardLinks {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 20px;
+		}
+		.GreenCardTitle {
+			font-size: 18px !important;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+		.darkCardTitle {
+			font-size: 16px !important;
+			font-style: normal;
+			font-weight: 500 !important;
+			line-height: normal;
+		}
+		.darkCardText {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400 !important;
+			line-height: 18px;
+		}
+		.darkCard {
+			margin: 25px 15px;
+		}
+		.LJBtn a {
+			font-size: 12px !important;
+			font-weight: 500 !important;
+		}
+		.GreenCardPara {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 18px;
+		}
+		.centered {
+			transform: translate(3%, -10%) !important;
+		}
+		.desk-hcl-text {
+			font-size: 35px !important;
+			font-style: normal;
+			font-weight: 400 !important;
+			line-height: normal;
+		}
+		.desk-prod-name {
+			font-size: 35px !important;
+			font-style: normal;
+			font-weight: 800 !important;
+			line-height: normal;
+		}
+		.learning-journeys {
+			font-size: 28px !important;
+			font-style: normal;
+			font-weight: 500;
+		}
+		.learning-journey-para {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 18px !important;
+		}
+		.BannerPar {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 18px;
+		}
+		a.desk-demo-btn {
+			font-size: 12px !important;
+		}
+	}
+	
+	@media screen and (max-width: 900px) {
+		.Register-text {
+			font-size: 16px !important;
+		}
+	}
+	
+	@media only screen and (min-width: 1000px)and (max-width: 1019px) {
+		.GreenCardTitle {
+			min-height: 80px;
+		}
+	}
+	
+	@media only screen and (min-width: 1020px)and (max-width: 1094px) {
+		.GreenCardTitle {
+			height: 60px;
+		}
+	}
+	
+	@media only screen and (min-width: 1200px)and (max-width: 1295px) {
+		div.Card2 {
+			margin-bottom: -10px;
+		}
+		.GreenCardTitle {
+			min-height: 90px;
+		}
+	}
+	
+	@media only screen and (min-width: 1296px)and (max-width: 1475px) {
+		.GreenCardTitle {
+			min-height: 90px;
+		}
+		.centered {
+			position: absolute;
+			top: 15%;
+			left: 2%;
+			transform: translate(2%, 6%);
+			color: #fff;
+			width: 50%;
+		}
+		.SubSec {
+			font-size: 30px;
+			margin: 10px auto;
+			line-height: 30px;
+		}
+	}
+	
+	@media only screen and (min-width: 1075px)and (max-width: 1295px) {
+		ul.third-grid {
+			margin-top: -10px;
+		}
+		.SubSec {
+			font-size: 30px;
+			margin: 10px auto;
+			line-height: 30px;
+		}
+		.BannerPar {
+			font-size: 14px !important;
+			line-height: 16px;
+		}
+		.centered {
+			position: absolute;
+			top: 15%;
+			left: 2%;
+			color: #fff;
+			width: 50%;
+		}
+		.BannerImg {
+			min-height: 250px;
+			width: 100%;
+		}
+		.centered {
+			transform: translate(2%, -5%);
+		}
+	}
+	
+	@media only screen and (min-width: 430px)and (max-width: 609px) {
+		.ProdPage {
+			margin-top: 50px !important;
+		}
+	}
+	
+	@media only screen and (min-width: 610px)and (max-width: 1080px) {
+		.ProdPage {
+			margin-top: 50px !important;
+		}
+	}
+	
+	@media only screen and (min-width: 320px)and (max-width: 767px) {
+		.LearnJourCard {
+			margin: 30px auto;
+		}
+		.LearnJouCardSec {
+			padding: 0px 25px;
+		}
+		ul.second-grid,
+		ul.third-grid {
+			margin-top: -10px;
+		}
+		.LJBtn a:hover {
+			padding-left: 0px !important;
+		}
+		.ResoucesLinks a {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 500 !important;
+		}
+		.DeskTab {
+			display: none;
+		}
+		div.resources-text {
+			font-size: 16px !important;
+			font-style: normal;
+			font-weight: 500;
+		}
+		div.resources-para {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400;
+		}
+		.resources-list {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 500 !important;
+			line-height: 20px !important;
+		}
+		.GreenCardTitle {
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 700;
+		}
+		.darkCardText {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 18px;
+		}
+		.GreenCardPara {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 18px;
+		}
+		div.LJBtn a {
+			font-size: 12px !important;
+		}
+		.LJBtn a:hover {
+			padding-left: 0px !important;
+		}
+		.darkCardTitle {
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			margin-top: 5%;
+		}
+		.darkCard {
+			margin: 30px 15px;
+		}
+		.darkCardSec {
+			padding: 0px 20px;
+		}
+		div.resources {
+			margin-top: 0px;
+			margin-bottom: 30px;
+		}
+		div.learning-journeys {
+			text-align: center;
+			font-size: 22px !important;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+		}
+		div.learning-journey-para {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400;
+			text-align: center;
+			line-height: 18px !important;
+		}
+		span.mob-hcl-text {
+			font-weight: 400 !important;
+		}
+		span.mob-prod-text {
+			font-weight: 800 !important;
+		}
+		.LogoTxt {
+			font-size: 25px;
+			margin-bottom: 5px;
+		}
+		.BannerPar {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 18px;
+			margin-bottom: -5px;
+		}
+		a.mob-demo-btn {
+			font-size: 12px !important;
+			font-style: normal;
+			font-weight: 500 !important;
+			width: 139px;
+			height: 30px;
+			border-radius: 4px;
+		}
+		.darkCardLinks {
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 500 !important;
+			line-height: 18px;
+		}
+		.centered {
+			position: absolute;
+			top: auto;
+			left: 5%;
+			color: #fff;
+			width: 90%;
+			bottom: 5%;
+		}
+	}
+	
+	@media only screen and (min-width: 768px) {
+		.Mob {
+			display: none;
+		}
+	}
+	
+	@media only screen and (min-width: 320px)and (max-width: 435px) {
+		/*.centered {
+			position: absolute;
+			top: 40%;
+			left: 2%;
+			color: #fff;
+			width: 90%;
+			transform: translate(5%, -30%);
+		}*/
+		.SubSec {
+			font-size: 24px;
+			margin: 10px auto;
+			line-height: 26px;
+		}
+	}
+	
+	@media only screen and (min-width: 436px)and (max-width: 595px) {
+		/*.centered {
+			position: absolute;
+			top: 45%;
+			left: 2%;
+			color: #fff;
+			width: 95%;
+			transform: translate(5%, 15%);
+		}*/
+		.SubSec {
+			font-size: 30px;
+			margin: 15px auto;
+			line-height: 32px;
+		}
+		/*.BannerPar {
+			font-size: 14px !important;
+			line-height: 16px;
+			padding-right: 10px;
+		}*/
+		.MobBannerImg {
+			max-height: 450px;
+		}
+	}
+	
+	@media only screen and (min-width: 596px)and (max-width: 767px) {
+		.SubSec {
+			font-size: 32px;
+			margin: 15px auto;
+			line-height: 34px;
+		}
+		.MobBannerImg {
+			max-height: 500px;
+		}
+	}
+	
+	@media only screen and (min-width: 1100px)and (max-width: 1395px) {}
+	
+	@media screen and (min-width:1200px) {
+		.LearningJourneysSection {
+			margin-bottom: 15px;
+		}
+		div.darkcards-row {
+			min-height: 65px;
+		}
+		.darkCardPara {
+			min-height: 80px;
+		}
+	}
+	
+	@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+		a.darkCardLinks {
+			font-weight: 500;
+		}
+		.desk-hcl-text {
+			font-size: 45px !important;
+			font-style: normal;
+			font-weight: 400 !important;
+			line-height: normal;
+		}
+		.desk-prod-name {
+			font-size: 45px !important;
+			font-style: normal;
+			font-weight: 800 !important;
+			line-height: normal;
+		}
+		.BannerPar {
+			font-size: 14px !important;
+			line-height: 18px;
+			font-weight: 400 !important;
+		}
+		a.desk-demo-btn {
+			font-style: normal;
+			font-weight: 500 !important;
+			font-size: 14px !important;
+		}
+	}
+	
+	@media screen and (min-width:1600px) {
+		div.LogoTxt {
+			margin-bottom: 25px;
+		}
+		.centered {
+			position: absolute;
+			top: 25%;
+		}
+	}
+	
+	@media only screen and (min-width: 901px)and (max-width: 1050px) {
+		.Register-text {
+			font-size: 23px !important;
+		}
+	}
+	
+	.img-responsive {
+		display: inline-table;
+		max-width: 100%;
+	}
+	
+	.Text-center {
+		text-align: center;
+	}
+	
+	div.SalesResourcesText {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin: 20px 0px 20px 0px;
+	}
+	
+	.ProdBannerSecU {
+		background: #000032;
+		color: #fff;
+		padding: 50px;
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.SubSec {
+		font-size: 18px;
+		margin: 10px 0;
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.ProdPage a {
+		color: #069 !important;
+		text-decoration: underline !important;
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.ProdBannerSecU .btn-primary:hover {
+		box-shadow: none !important;
+	}
+	
+	.liteBG {
+		background: #EFF0F7;
+		padding: 50px;
+	}
+	
+	.whiteBGSec {
+		background: #fff;
+		padding: 30px;
+		box-shadow: 0px 0px 1px 1px solid #EFF0F7;
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.SalesEnablement {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	
+	.SalesEnablementPara {
+		font-size: 14px;
+	}
+	
+	.ClickHereBtn a {
+		background: #17707F !important;
+		color: #8CFFFF !important;
+		font-size: 12px !important;
+		padding: 10px 0px !important;
+		width: 126px;
+		border-radius: 4px;
+		filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.20));
+		text-decoration: none !important;
+	}
+	
+	.ClickHereBtnSec {
+		text-align: center;
+		margin: 10% auto;
+	}
+	
+	.SalesOperations {
+		font-size: 18px;
+		margin-bottom: 10px;
+		padding-left: 15px;
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.SaleaOprList ul li a {
+		font-size: 14px;
+		color: #000032 !important;
+		line-height: 20px;
+		text-decoration: none !important;
+		font-family: "HCLTechRoobert" !important;
+		font-weight: 500;
+	}
+	
+	.SalesResources {
+		font-size: 18px;
+		margin-bottom: 10px;
+		padding-left: 15px;
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.liteGreyCard {
+		background: #EFF0F7;
+		padding: 20px;
+		margin: 5px;
+		color: #000000;
+		border-radius: 4px;
+	}
+	
+	.ltGreycardTitle {
+		font-size: 18px;
+		margin-bottom: 10px;
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.liteGreyCard ul li {
+		font-size: 14px;
+		line-height: 18px;
+		/*margin-bottom: 20px;*/
+		font-family: "HCLTechRoobert" !important;
+	}
+	
+	.linkBot {
+		margin-bottom: 10px;
+	}
+	
+	.liteGreyCard ul li a {
+		color: #000032 !important;
+		text-decoration: none !important;
+		font-family: "HCLTechRoobert" !important;
+		font-weight: 500;
+	}
+	
+	.SalesPlays {
+		font-size: 18px;
+		padding-left: 15px;
+	}
+	
+	@media screen and (max-width: 429px) {
+		.ProdPage {
+			margin-top: 95px !important;
+		}
+		.Signupcard a {
+			font-size: 11px;
+		}
+	}
+	
+	@media only screen and (min-width: 430px)and (max-width: 609px) {
+		.ProdPage {
+			margin-top: 50px !important;
+		}
+	}
+	
+	@media only screen and (min-width: 610px)and (max-width: 1080px) {
+		.ProdPage {
+			margin-top: 50px !important;
+		}
+	}
+	
+	@media screen and (min-width: 767px) {
+		.Signupcard {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+</style>
+<div class="container-fluid ProdPage" style="padding: 0 !important;">
+	<div style="position: relative;" class="DeskTab"><img src="/images/Lc4sMQCcN5uxXmL13gSlsxClNTU3Mjc3NTc4MTc2/selling-esentials-desk-banner.png" class="img-responsive BannerImg" style="width: 100%;" />
+		<div class="centered">
+			<div style="display: flex;">
+				<div class="LogoTxt"><span class="desk-hcl-text" style="font-weight: 500;">Selling Essentials Program</span></div>
+			</div>
+			<div style="font-size: 18px;" class="BannerPar">
+				<div>Being a successful seller requires basic skills. If you are a sales professional seeking to improve the effectiveness of your ground level sales techniques, enroll in the Selling Essentials Program. This program is targeted to those who are new to the sales role or even intermediate level sellers who may want to brush up on basic skills.</div>
+			</div>
+		</div>
+	</div>
+	<div style="position: relative;" class="Mob"><img src="/images/Lc4sMQCcN5uxXmL13gSlsxClNTU3Mjc3NTc4MTc2/selling-esentials-desk-banner.png" class="img-responsive MobBannerImg" style="width: 100%;" />
+		<div class="centered">
+			<div class="LogoTxt"><span class="mob-hcl-text" style="font-weight: 500;">Selling Essentials Program</span> <span class="mob-prod-text" style="font-weight: 900;"></span></div>
+			<!--<div class="SubSec">Being a successful seller requires basic skills. If you are a sales professional seeking to improve the effectiveness of your ground level sales techniques, enroll in the Selling Essentials Program. This program is targeted to those who are new to the sales role or even intermediate level sellers who may want to brush up on basic skills.</div>-->
+			<!--<div style="font-size: 18px;" class="BannerPar">
+				<div>Fast, Accurate, Agile Application Security Testing</div>
+				<br /> Discover useful insights into the technologies and procedures being used today and the challenges companies face in developing robust application security solutions. Explore and learn the market-leading Application Security Solutions (SAST, DAST, IAST, SCA, API) using HCL AppScan</div>
+			<br />
+			<div><a class="btn btn-primary mob-demo-btn" href="https://www.hcltechsw.com/appscan/demo?referrer=hclsoftwareu.hcltechsw.com" alt="Request a Demo" target="_blank" rel="noopener" style="color: #17707f !important; text-decoration: none !important; background: #fcfcfc !important; font-weight: 500; padding: 9px 15px !important; font-size: 12px;">Request a Demo &nbsp;<span><i class="fa-solid fa-arrow-right"></i></span></a></div>
+		--></div>
+	</div>
+	<div class="liteBG">
+		<div class="whiteBGSec">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="liteGreyCard" style="font-size: 14px;">
+						<!--<div>Being a successful seller requires basic skills. If you are a sales professional seeking to improve the effectiveness of your ground level sales techniques, enroll in the Selling Essentials Program. This program is targeted to those who are new to the sales role or even intermediate level sellers who may want to brush up on basic skills.</div>-->
+						<!--<br />-->
+						<div><b>Learning Journey topics include</b></div>
+						<ul>
+							<!--</li>-->
+							<li>
+								<div><b>Sales Foundation concepts (prospecting, diagnosing, presenting, overcoming objections, negotiating,and closing)</b></div>
+							</li>
+							<li>
+								<div><b>General Listening</b></div>
+							</li>
+							<li>
+								<div><b>General Communication</b></div>
+							</li>
+							<li>
+								<div><b>General presentation delivery</b></div>
+							</li>
+							<li>
+								<div><b>General finance concepts for non-finance professionals </b></div>
+							</li>
+						</ul>
+						<br />
+						<div>You will also choose an elective learning journey to complete the program. Choose from options such as leadership, time management, advanced selling essentials, applying Generative AI in the sales process, and even social selling. The training content includes online, self-paced video courses and assessments provided via Skillsoft’s Percipio education platform. There is no cost associated with registration. The program will run for 12 weeks, from April 8 - June 28, with a total of a 12 hour time commitment. Thats just 1 hour a week.</div>
+					</div>
+					<br />
+					<div class="liteGreyCard Signupcard" style="padding: 30px;">
+						<div class=" Register-text" style="font-weight: 500 !important;">Registration is open from March 11 – 29, 2024.</div>
+						<a href="https://volt.myhclsandbox.com/volt-apps/anon/org/app/1e37c836-2632-4f13-8b3e-0c262f484c44/launch/index.html?form=F_Form1" target="_blank" style="font-weight: 500; color: #ffff !important; background-color: #17707f; padding: 5px 15px; text-decoration: none !important; border-radius: 4px;" rel="noopener">Sign Up Today <img src="/images/Lc4sMQCcN5uxXmL13gSlsxClNTU3Mjc3NTc4MTc2/arrow_right_alt.png" style="margin-left: 10px;" /></a></div>
+					<br />
+					<div class="liteGreyCard" style="font-size: 14px;">
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-3" style="font-weight: 500;">Audience</div>
+							<div class="col-md-9" style="font-weight: 500;">Those who are new to selling or who may want to brush up on the essential and fundamental skills including selling, listening and communication, general presentation delivery, and basic finance concepts for non-finance professionals.</div>
+						</div>
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-3" style="font-weight: 500;">Completion Requirements</div>
+							<div class="col-md-9" style="font-weight: 500;">Complete 5 Required Learning Journeys + 1 Elective Learning Journey of your choice.</div>
+						</div>
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-3" style="font-weight: 500;">Award</div>
+							<div class="col-md-9" style="font-weight: 500;">Earn a digital badge for every course your complete. Receive a Selling Essentials Program Certificate of Completion when all program requirements are met.</div>
+						</div>
+						<div class="row" style="padding: 9px 0px;">
+							<div class="col-md-3" style="font-weight: 500;">Your Success</div>
+							<div class="col-md-9" style="font-weight: 500;">Participants should leave the program with basic exposure to the learning journey topics provided to help facilitate a positive foundation for knowing how to interact with potential buyers on a regular basis.</div>
+						</div>
+					</div>
+					<br /><br /></div>
+				<div style="font-weight: 500; font-size: 18px; padding: 20px;">Schedule of Events</div>
+				<div class="col-sm-6" style="font-size: 14px;">
+					<div class="liteGreyCard">
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">April 8, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Kick-Off Meeting</div>
+						</div>
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">April 8, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Sales Foundation Learning Journey</div>
+						</div>
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">April 22, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Presentation Learning Journey</div>
+						</div>
+						<div class="row" style="padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">May 6, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Listening Learning Journey</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="liteGreyCard" style="font-size: 14px;">
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">May 20, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Communication Learning Journey</div>
+						</div>
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">June 3, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Financial Learning Journey</div>
+						</div>
+						<div class="row" style="border-bottom: 1px solid #ffff; padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">June 17, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Elective learning journey</div>
+						</div>
+						<div class="row" style="padding: 9px 0px;">
+							<div class="col-md-6" style="font-weight: 500;">June 28, 2024</div>
+							<div class="col-md-6" style="font-weight: 500;">Closing</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="padding: 15px 20px 0px 20px;"><a href="/forum/support" style="text-decoration: underline !important; font-size: 16px; font-weight: 500; color: #000032 !important;">Questions about the program? Post your questions here!</a></div>
+		</div>
+	</div>
+</div>
